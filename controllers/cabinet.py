@@ -317,6 +317,7 @@ def show_man(req, man):
                 _class='col-sm-' + col2),
             _class='row')
     
+    ##local_import(bonus_lib, reload=True)
     import bonus_lib
     referals, active_referals = bonus_lib.calc_referals(db, man)
     ref_bonus = bonus_lib.calc_referals_bonus(active_referals)

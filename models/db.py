@@ -26,8 +26,9 @@ if not request.env.web2py_runtime_gae:
                 migrate = migrate
                 )
     ## define session here
-    ###session.connect(request,response,cookie_key='kdswewref9q0328409rifcghytf65',compression_level=None)
-    session.connect(request, response, db=db)
+    session.connect(request,response,cookie_key='kdswewref9q0328409rifcghytf65',compression_level=None)
+    ###session.connect(request, response, db=db)
+    ###session.connect(request, response, db = MEMDB(Client()))
 else:
     ## connect to Google BigTable (optional 'google:datastore://namespace')
     db = DAL('google:datastore+ndb')
