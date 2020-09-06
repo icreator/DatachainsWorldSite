@@ -1,0 +1,545 @@
+{{extend 'layout.html'}}
+
+{{if False and NO_IMG and IS_LOCAL:}}
+SERS.no_img
+{{else:}}
+<section id="slider-wrapper" class="layer-slider-wrapper">
+    <div id="layerslider" style="width:100%;height:500px;">
+
+        <div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
+        	<!-- slide background -->
+            <img src={{=URL('static','images/slider/fw-1.jpg')}} class="ls-bg" alt="Slide background"/>
+
+            <!-- Right Image -->
+            <img src={{=URL('static','images/prv/human-img-4.png')}} class="ls-l" style="top:48%; left:70%;" data-ls="offsetxin:0;offsetyin:250;durationin:950;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;" alt="Image layer">
+
+            <!-- Left Text -->
+            <h3 class="ls-l title" style="width:500px; top:15%; left:80px;" data-ls="offsetxin:0;offsetyin:250;durationin:1000;delayin:500;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+                {{=T('выгодно. эффективно. надёжно.')}}</h3>
+            <h3 class="ls-l list-item" style="top:28%; left:80px;" data-ls="offsetxin: left; rotatein: 90;durationin:1000;delayin:1500;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+                <bigger><i class="fa fa-check"></i></bigger>
+                {{=T('Ваши задачи и решения перенесём на блокчейн технологию')}}
+            </h3>
+            <h3 class="ls-l list-item" style="top:35%; left:80px;" data-ls="offsetxin: left; rotatein: 90;durationin:1000;durationin:1000;delayin:2000;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+                <bigger><i class="fa fa-check"></i></bigger>
+                {{=T('консультируем по вопросам внедрения')}}
+            </h3>
+            <h3 class="ls-l list-item" style="top:42%; left:80px;" data-ls="offsetxin: left; rotatein: 90;durationin:1000;durationin:1000;delayin:2500;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+            	<bigger><i class="fa fa-check"></i></bigger>
+                {{=T('разрабатываем блокчейн под ваши требования')}}
+            </h3>
+            <h3 class="ls-l list-item" style="top:49%; left:80px;" data-ls="offsetxin: left; rotatein: 90;durationin:1000;durationin:1000;delayin:3000;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+            	<bigger><i class="fa fa-check"></i></bigger>
+                {{=T('опыт работы в блокчейн-технологии более 2-х лет')}}
+            </h3>
+
+            <p class="ls-l text-standard" style="width:500px; top:65%; left:80px;" data-ls="offsetxin:0;offsetyin:250;durationin:1000;delayin:3500;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+                {{=B(T('Имеем готовые решения'))}}
+            </p>
+
+    </div>
+</section>
+
+<section id="00" class="slice bg-2 p-15">
+<div class="cta-wr">
+<div class="container">
+    <div class="row">
+
+        <div id="probe3" class="col-md-6">
+        <h1>
+            <strong>{{=T('Вы нашли профессионалов')}}: </strong>{{=T('Мы уже работаем над несколькими проектами на блокчейн')}}
+        </h1>
+        </div>
+        <div class="col-sm-6"> 
+                            <h3>
+                    <a href="{{=URL('cabinet', 'index')}}"
+                        class="btn btn-one btn-lg pull-right">
+                        <bigger><i class="fa fa-hand-o-right"></i></bigger>
+                        {{=T('Присоединиться')}}
+                    </a>
+                    </h3>
+        </div>
+
+    </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<section id="11s" class="slice bg-3">
+    <div class="container">
+        <center><h2>
+            {{=T('Наши преимущества')}}
+            </h2></center>
+        <div class="row">
+            <div class="col-sm-12">
+                <p>
+                    {{=T('Это следующий шаг развития блокчейн-технологии после Эфириума: Super Fast Smart Contracts (SFSC). SFSC - это высокоскоростные встроенные смарт-контракты бесплатные для всех. То есть для их использования Вам не нужно покупать токены или участвовать в ICO (initial coin offering)')}}
+                </p>
+                <p>
+                    {{=T('Это первая блокчейн среда для хранения и использования электронных подписей и учёта юридически-значимых действий: от подписания договоров и актов приёма-передачи, до выпуска векселей и голосований, как в юридических лицах так и в ТСЖ.')}}
+                </p>
+                <p>
+                    {{=T('Это первая блокчейн среда в которой на уровне протокола встроена система сетевого учёта (МЛМ-структуры) и автоматическое начисление наград за действия от всех Ваших приглашённых и подписчиков (рефералов) до 12-го уровня!')}}
+                </p>
+                <p>
+                    {{=T('Это первая российская блокчейн среда, которая решает задачи импортозамещения')}}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="11" class="slice bg-3">
+    <div class="container">
+        <center><h2>
+            {{=T('Кроме этого')}}
+            </h2></center>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="w-box w-box-inverse">
+                    <div class="thmb-img">
+                        <i class="fa fa-group"></i>
+                    </div>
+
+                    <h2>{{=T('Мы используем российский блокчейн')}}</h2>
+                    <p class="text-center">{{=T('Наш блокчейн решает задачу импортозамещения')}}.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="w-box w-box-inverse">
+                    <div class="thmb-img">
+                        <i class="fa fa-rocket"></i>
+                    </div>
+
+                    <h2>{{=T('Мы используем блокчейн 3.0')}}</h2>
+                    <p class="text-center">{{=T('Наши разработки основаны на последних достижениях в блокчейн индустрии')}}</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="w-box w-box-inverse">
+                    <div class="thmb-img">
+                        <i class="fa fa-trophy"></i>
+                    </div>
+
+                    <h2>{{=T('Мы имеем награды')}}</h2>
+                    <p class="text-center">{{=T('Мы участвуем в конференциях и круглых столах по блокчейн тематике в АСИ, ФРИИ')}}</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="w-box w-box-inverse">
+                    <div class="thmb-img">
+                        <i class="fa fa-shield"></i>
+                    </div>
+
+                    <h2>{{=T('Мы всегда на передовом крае')}}</h2>
+                    <p class="text-center">{{=T('Наши программисты постоянно совершенствуются')}}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="22" class="slice bg-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="w-box w-box-inverse">
+                    <div class="thmb-img">
+                        <i class="fa fa-cube"></i>
+                    </div>
+
+                    <h2>{{=T('Многогранность решений')}}</h2>
+                    <p class="text-center">{{=T('Наша блокчейн технология решает разные виды задач из разных областей управления и учёта')}}.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="w-box w-box-inverse">
+                    <div class="thmb-img">
+                        <i class="fa fa-gears"></i>
+                    </div>
+
+                    <h2>{{=T('Компактность данных')}}</h2>
+                    <p class="text-center">{{=T('Размер записей в наших решения очень компактный')}}</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="w-box w-box-inverse">
+                    <div class="thmb-img">
+                        <i class="fa fa-clock-o"></i>
+                    </div>
+
+                    <h2>{{=T('Высокая скорость работы')}}</h2>
+                    <p class="text-center">{{=T('Наша блокчейн среда очень производительна')}}</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="w-box w-box-inverse">
+                    <div class="thmb-img">
+                        <i class="fa fa-heart"></i>
+                    </div>
+
+                    <h2>{{=T('Наши решения нравятся заказчикам')}}</h2>
+                    <p class="text-center">{{=T('Вы останетесь довольны нашим решением')}}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="11s" class="slice bg-3">
+    <div class="container">
+        <center><h2>
+            {{=T('Технические преимущества')}}
+            </h2></center>
+        <div class="row" id="whitepaper">
+            <div class="col-sm-12">
+                <p>
+                    {{=T('Пропускная способность больше чем у биткоина в 60 раз')}}
+                </p>
+                <p>
+                    {{=T('Скорость сборки блоков быстрее чем у биткоина в 20 раз')}}
+                </p>
+                <p>
+                    {{=T('Стоимость транзакций дешевле в 20 раз')}}
+                </p>
+                <p>
+                    {{=T('Новый протокол, с самыми короткими транзакциями среди других блокчейн-проектов')}}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <center>
+                    <h2>
+                        Whitepaper
+                    </h2>
+                </center>
+                <center>
+                <a href="https://docs.google.com/document/d/1TvKGOvqrhYhJ0LElggSPiZU8592R_-dngXUckeP75Gw/edit?usp=sharing"
+                    class="btn btn-rev2 btn-lg" target="blank">
+                    <bigger><i class="fa fa-newspaper-o"></i></bigger>
+                        {{=T('Технические наброски, реализации и задумки на будущее')}}
+                </a>
+                </center>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="04" class="slice bg-2">
+    {{=CENTER(H3(T('История развития и презентации')))}}
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-sm-3">
+                <h3>
+                <a href="https://www.facebook.com/groups/datachains/permalink/297942940603794"
+                    class="btn btn-one btn-lg pull-right" target="blank">
+                    <bigger><i class="fa fa-paper-plane"></i></bigger>
+                    {{=T('2017-01-22')}}
+                </a>
+                </h3>
+            </div>
+            <div class="col-sm-8">
+                <h3>
+                    <strong>{{=T('Запуск БОЕВОЙ версии блокчейн-среды 3-го поколения ERM4 v.2.17.04')}} </strong>
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h3>
+                <a href="https://youtu.be/mQRu9qXtwVU?t=10406"
+                    class="btn btn-one btn-lg pull-right" target="blank">
+                    <bigger><i class="fa fa-video-camera"></i></bigger>
+                    {{=T('2017-01-14')}}
+                </a>
+                </h3>
+            </div>
+            <div class="col-sm-8">
+                <h3>
+                    <strong>{{=T('Большой рассказ о возможностях блокчейн 3.0 на конференции "Блокчейн-государство"')}} </strong>
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h3>
+                <a href="https://www.youtube.com/watch?v=n1b9g1AXKuU"
+                    class="btn btn-one btn-lg pull-right" target="blank">
+                    <bigger><i class="fa fa-video-camera"></i></bigger>
+                    {{=T('2016-05-30')}}
+                </a>
+                </h3>
+            </div>
+            <div class="col-sm-8">
+                <h3>
+                    <strong>{{=T('Телемост с Донбасом')}} </strong>
+                </h3>
+                <a href="http://ap-dnr.com/pervaya-blokchejn-konferentsiya-v-dnr-vyvody-vystupleniya-ekspertov-video/"
+                    class="blue" target="blank">{{=T('Полная версия конференции')}}
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h3>
+                <a href="https://www.youtube.com/watch?v=gc6j6-NW-7g&feature=youtu.be&t=21012"
+                    class="btn btn-one btn-lg pull-right" target="blank">
+                    <bigger><i class="fa fa-video-camera"></i></bigger>
+                    {{=T('2016-05-30')}}
+                </a>
+                </h3>
+            </div>
+            <div class="col-sm-8">
+                <h3>
+                    <strong>{{=T('ФРИИ: КОНФЕРЕНЦИИ «БЛОКЧЕЙН – НОВЫЕ ВОЗМОЖНОСТИ»')}} </strong>
+                </h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+
+                <h3>
+                <a href="https://docs.google.com/document/d/16sGqvTTWLDjYbrdq1d-hDqged-2hAEVYBTMCLHw9g5A"
+                    class="btn btn-one btn-lg pull-right" target="blank">
+                    <bigger><i class="fa fa-file-text"></i></bigger>
+                    {{=T('2016-05-30')}}
+                </a>
+                </h3>
+            </div>
+            <div class="col-sm-8">
+                <h3>
+                    <strong>{{=T('ФРИИ: КОНФЕРЕНЦИИ «БЛОКЧЕЙН – НОВЫЕ ВОЗМОЖНОСТИ»')}} </strong>
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+                <h3>
+                <a href="https://www.youtube.com/watch?v=iKd2TRgvaBw&feature=youtu.be&t=54m15s"
+                    class="btn btn-one btn-lg pull-right" target="blank">
+                    <bigger><i class="fa fa-video-camera"></i></bigger>
+                    {{=T('2016-05-21')}}
+                </a>
+                </h3>
+            </div>
+            <div class="col-sm-8">
+                <h3>
+                    <strong>{{=T('ХАКАТОН (КИВИ): «Мир Без Посредников». Проект "Государственный Блокчейн". Времени хватило только описать случай переписки с чиновниками. Хотя уже учет граждан работал.')}} </strong>
+                </h3>
+            </div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-sm-3">
+
+                <h3>
+                <a href="https://www.youtube.com/watch?v=iKd2TRgvaBw&feature=youtu.be&t=51m45s"
+                    class="btn btn-one btn-lg pull-right" target="blank">
+                    <bigger><i class="fa fa-video-camera"></i></bigger>
+                    {{=T('2016-05-21')}}
+                </a>
+                </h3>
+            </div>
+            <div class="col-sm-8">
+                <h3>
+                    <strong>{{=T('ХАКАТОН (КИВИ): «Мир Без Посредников». Проект для МинТруда по оценке трудовых ресурсов страны на блокчейне. Кстати там на картинах наш блокчейн с биржей специалистов')}} </strong>
+                </h3>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-3">
+
+                <h3>
+                <a href="https://www.youtube.com/watch?v=2Q9p98dgaDM"
+                    class="pull-right btn btn-lg btn-one" target="blank">
+                    <bigger><i class="fa fa-video-camera "></i></bigger>
+                    {{=T('2015-12-29')}}
+                </a>
+                </h3>
+            </div>
+            <div class="col-sm-8">
+            <h3>
+                <strong>{{=T('Наша награда по результатам хакатона от ВШЭ')}} </strong>
+            </h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+
+                <h3>
+                <a href="https://docs.google.com/presentation/d/1nRh4YZztOib8NrWG3gZL-HehwulShSODEnd-73Y0zRE"
+                    class="pull-right btn btn-lg btn-one" target="blank">
+                    <bigger><i class="fa fa-file-text"></i></bigger>
+                    {{=T('2015-11-15')}}
+                </a>
+                </h3>
+            </div>
+            <div class="col-sm-8">
+                <h3>
+                    <strong>{{=T('Презентация для хакатон от ВШЭ - государственный блокчейн (только идеи)')}} </strong>
+                </h3>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-3">
+
+                <h3>
+                <a href="https://docs.google.com/presentation/d/1_A_r_7RfaJQC8EI4p-q38PK2xvzcd9bVJHyTwE_3Iyo"
+                    class="pull-right btn btn-lg btn-one" target="blank">
+                    <bigger><i class="fa fa-file-text"></i></bigger>
+                    {{=T('2015-11-15')}}
+                </a>
+                </h3>
+            </div>
+            <div class="col-sm-8">
+            <h3>
+                <strong>{{=T('Презентация для хакатон от ВШЭ но натариусам на блокчейне (только ТЗ)')}} </strong>
+            </h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+
+                <h3>
+                <a href="https://docs.google.com/document/d/19RPCFNSKD8JhCUz1WX3H5_EQWVoAXM08GRG7hfYEHz8"
+                    class="pull-right btn btn-lg btn-one" target="blank">
+                    <bigger><i class="fa fa-newspaper-o"></i></bigger>
+                    {{=T('2015-10-22')}}
+                </a>
+                </h3>
+            </div>
+            <div class="col-sm-8">
+            <h3>
+                <strong>{{=T('Статья "Деньги 7.0 - шаг в будущее финансовых систем или седьмой денежный уклад"')}} </strong>
+            </h3>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section id="05" class="slice">
+    {{=CENTER(H3(T('СМИ о нас')))}}
+    <div class="container">
+
+        <div class="row" style="margin-bottom: 10px;">
+            <div class="col-sm-3">
+                <a href="http://cryptorussia.ru/news/zapusk-rossiyskogo-blokcheyn-proekta-3-go-pokoleniya-datachainsworld"
+                    class="btn btn-rev2 pull-right" target="blank">
+                    {{=IMG(_src=URL('static', 'images/logos/cryptorussia_ru.jpg'), _width=150, _alt='bitnovosti article')}}
+                </a>
+
+            </div>
+            <div class="col-sm-8">
+            <h3>
+                <strong>{{=SPAN('CryptoRussia: 2017.02.23 "', T('Запуск российского блокчейн проекта 3-го поколения DATACHAINS.world'),'"')}} </strong>
+            </h3>
+            </div>
+        </div>
+        <div class="row"  style="margin-bottom: 10px;">
+            <div class="col-sm-3">
+                <a href="https://bitnovosti.com/lenta/comment-page-186/#comment-135649"
+                    class="btn btn-rev2 pull-right" target="blank">
+                    {{=IMG(_src="https://bitnovosti.files.wordpress.com/2015/03/bn_logo_256px.jpg?w=150", _alt='bitnovosti article')}}
+                </a>
+
+            </div>
+            <div class="col-sm-8">
+            <h3>
+                <strong>{{=SPAN('BitNovosti: 2016.12.25 "', T('Первый в мире сервис по доставке заказных писем с уведомлением – на блокчейне'),'"')}} </strong>
+            </h3>
+            </div>
+        </div>
+        <div class="row"  style="margin-bottom: 10px;">
+            <div class="col-sm-3">
+                <a href="http://www.pcweek.ru/idea/article/detail.php?ID=182389"
+                    class="btn btn-rev2 btn-lg pull-right" target="blank">
+                    <bigger><i class="fa fa-newspaper-o"></i></bigger>
+                    {{=IMG(_src=URL('static','images/logos/pcweek.png'), _width=100, _alt='pc week article')}}
+                </a>
+
+            </div>
+            <div class="col-sm-8">
+            <h3>
+                <strong>{{=SPAN('PC WEEK: 2016.02.08 "', T('Перспективы блокчейн в России'),'"')}} </strong>
+            </h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section id="06" class="slice bg-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h3>
+                <a href="https://docs.google.com/document/d/1TvKGOvqrhYhJ0LElggSPiZU8592R_-dngXUckeP75Gw/edit?usp=sharing"
+                    class="btn btn-one btn-lg pull-right" target="blank">
+                    <bigger><i class="fa fa-lightbulb-o"></i></bigger>
+                    {{=T('Задумки на будущее')}}
+                </a>
+                </h3>
+            </div>
+            <div class="col-sm-8">
+            <h3>
+                <strong>{{=T('Множество идей которые мы задумали')}} </strong>
+            </h3>
+            </div>
+    </div>
+
+    <br />
+    <h1>
+        <strong>{{=T('Есть задачи или вопросы?')}} </strong>{{=T('Напишите нам')}}!
+    </h1>
+    <div class="row">
+
+        <div class="col-sm-4">
+            <h3>
+                <a href={{=URL('crew','index')}}
+                    class="btn btn-one btn-lg pull-right">
+                    <bigger><i class="fa fa-hand-o-right"></i></bigger>
+                    {{=T('Команда')}}
+                </a>
+            </h3>
+        </div>
+        <div class="col-sm-4"> 
+            <h3>
+                <a href="{{=URL('cabinet', 'index')}}"
+                    class="btn btn-one btn-lg pull-right">
+                    <bigger><i class="fa fa-hand-o-right"></i></bigger>
+                    {{=T('Присоединиться')}}
+                </a>
+            </h3>
+        </div>
+        <div class="col-sm-4">
+            <h3>
+                <a href={{=URL('default','contacts')}}
+                    class="btn btn-one btn-lg pull-right">
+                    <bigger><i class="fa fa-hand-o-right"></i></bigger>
+                    {{=T('Контакты')}}
+                </a>
+            </h3>
+        </div>
+
+    </div>
+</section>
+
+{{pass}}

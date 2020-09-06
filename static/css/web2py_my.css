@@ -1,0 +1,400 @@
+p {
+    text-indent: 1em;
+}
+.btn-fa {
+    padding: 0em 0.3em;
+    font-size: 2em;
+    margin: 0em 0.1em;
+}
+.wp-theme-1 .btn-fa i {
+    margin-right: 0px;
+}
+
+.wp-theme-1 a i.gray {
+    color:#bbb;
+}
+
+.wp-theme-1 a.white {
+    color: black;
+    cursor: pointer;
+    background: #fff8a3;
+    padding: 0px 7px;
+}
+.wp-theme-1 a.white:hover {
+    color: #20b92e;
+    background: #fff;
+    text-decoration: none;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .35s;
+}
+
+.wp-theme-1 a.blue {
+    color: black;
+    cursor: pointer;
+    background: #d7efff;
+    padding: 0px 7px;
+}
+.wp-theme-1 a.blue:hover {
+    color: #20b92e;
+    background: #fff;
+    text-decoration: none;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .35s;
+}
+.wp-theme-1 a.yellow {
+    color: black;
+    cursor: pointer;
+    background: #ffffa5;
+    padding: 0px 7px;
+}
+.wp-theme-1 a.yellow:hover {
+    color: #20b92e;
+    background: #fff;
+    text-decoration: none;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .35s;
+}
+
+
+.wp-theme-1 a.mari {
+    color: #6cb7b3;
+    cursor: pointer;
+    //background: #d7efff;
+    padding: 0px 7px;
+}
+.wp-theme-1 a.mari:hover {
+    color: #f1585d;
+    //background: #fff;
+    text-decoration: none;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .35s;
+}
+
+.account {
+    width: 20em;
+}
+
+.small {
+    font-size:75% !important;
+}
+.alert {
+    background-color: antiquewhite;
+}
+.flash {
+    cursor: pointer;
+}
+.error_wrapper .error {
+    color: red;
+}
+
+footer h3, footer h4 {
+    color: #ccc;
+}
+.wp-theme-1 .navbar-fixed-top ul.nav.navbar-nav.navbar-nav2 {
+    background-color :aliceblue !important;
+    margin: 0px 0px !important;
+}
+
+.navbar-fixed-top ul.nav.navbar-nav.navbar-nav2>li>a {
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+}
+.wp-theme-1 .navbar-fixed-top .navbar-nav>li>a {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.navbar-fixed-top .navbar-nav {
+    background-color: #D2E3F4;
+    margin: 10px 35px 0px 0px;
+}
+.navbar-fixed-top .navbar-nav.navbar-nav2 {
+    margin: 10px 35px 0px 0px;
+}
+
+ul.nav.navbar-nav.navbar-nav2>li>a {
+    padding: 10px 10px;
+}
+ul.nav.navbar-nav>.web2py-menu-active>a>span>i {
+    color: yellow !important;
+}
+
+ul.nav.navbar-nav.navbar-nav2>li>a>span {
+    top: 0px;
+    position: relative;
+    font-size: 16px;
+}
+
+
+.bill_logo {
+    font-size:30px;
+    color:#209F99;
+}
+.orange-16 {
+    font-size:48px;
+    color:orange;
+}
+.white-space-normal {
+    white-space:normal;
+}
+
+bigger {
+    font-size: larger;
+}
+.addr_txt {
+    color:#AAA;
+}
+orange {
+    color:orange;
+    text-decoration:none;
+}
+
+.orange_b {
+    color:#e97400;
+    font-weight:bold;
+}
+
+a.logo:hover {
+    color:orange;
+    text-decoration:none;
+}
+input[name="want_pay"],button[name="want_pay"] {
+    //border: 2px inset;
+    margin:0px;
+    height: 2em;
+    font-size:22px;
+}
+input[name="want_pay"] {
+    padding: 0;
+    margin-top: 2px;
+    border-radius: 20px 0 0 20px;
+    width: 7em;
+    vertical-align: bottom;
+}
+button[name="want_pay"] {
+    padding: 0;
+    border-radius: 0px 20px 20px 0px;
+    width: 3em;
+    border:none;
+}
+.table>thead>tr>th {
+    border-top: 0;
+}
+
+.btn_pay {
+    background-color:#BFF4B5;
+    border: 4px solid transparent !important;
+    color: #057300;
+    //display:block;
+    //padding:7px;
+}
+.btn_pay:hover {
+    border: 4px solid #7AE4E1  !important;
+    //color: #000 !important;
+}
+.btn_sel {
+    //background-color:#D4DFFB;
+    color: #00108E;
+    background-color:#D2F1F0;
+    border: 4px solid #FFF;
+    cursor: pointer;
+    display:block;
+    padding:7px;
+}
+.btn_sel:hover {
+    border: 4px solid #ABE99F;
+    color: #000;
+}
+body {
+    font-size: 16px  !important;
+}
+a.url {
+    color:#209F99;
+}
+.odd {
+    background-color:#D8F5F4;
+}
+li.web2py-menu-active > a {
+    color:#fad !important;
+}
+.wp-theme-1 .navbar-wp .navbar-nav>.web2py-menu-active>a,
+.wp-theme-1 .navbar-wp .navbar-nav>.web2py-menu-active>a:hover,
+.wp-theme-1 .navbar-wp .navbar-nav>.web2py-menu-active>a:focus {
+    color:#fff !important;
+    //background-color:#20C5BD !important;
+    background-color:#209F99 !important;
+    border-radius:0;
+}
+.wp-theme-1 .layer-slider-wrapper .list-item {
+    color:#209F99 !important;
+}
+.wp-theme-1 .layer-slider-wrapper .subtitle {
+    color:#209F99 !important;
+}
+.wp-theme-1 .w-box.w-box-inverse .thmb-img:hover i {
+    background-color:#209F99 !important;
+}
+.wp-theme-1 .btn-rev2 {
+    color: #209f99;
+    background-color: white;
+    border: 2px solid #209f99;
+}
+.wp-theme-1 .btn-rev2:hover {
+    color: white;
+    background-color: #209f99;
+    border: 2px solid #209f99;
+}
+.wp-theme-1 .btn-blue2 {
+    color: white;
+    background-color:#8419b1;
+    border-color: #8419b1;
+}
+.wp-theme-1 .btn-blue2:hover {
+    background-color:#bf61e6;
+    border-color: #bf61e6;
+}
+
+.wp-theme-1 .btn-tre {
+    color: white;
+    background-color:#209F99;
+    border-color: #209F99;
+}
+.wp-theme-1 .btn-tre:hover {
+    background-color:#b6efec;
+    border-color: #b6efec;
+}
+.wp-theme-1 .btn-for {
+    color: white;
+    background-color:#ca7069;
+    border-color: #ca7069;
+}
+.wp-theme-1 .btn-for:hover {
+    background-color:#fdd0c8;
+    border-color: #fdd0c8;
+}
+
+.wp-theme-1 .btn-fiv {
+    color: #9d16d6;
+    border-width: 3px;
+    background-color:#fff;
+    border-color: #209f99;
+}
+.wp-theme-1 .btn-fiv:hover {
+    color: blanchedalmond;
+    background-color:#209f99;
+    border-color: #209f99;
+}
+
+
+.wp-theme-1 .bg-2 {
+    background-color:#209F99 !important;
+}
+.wp-theme-1 .carousel-2 .carousel-indicators .active {
+    background-color:#209F99 !important;
+}
+
+.wp-theme-1 a.clr2 {
+    color: springgreen;
+}
+.wp-theme-1 a.clr2:hover {
+    color: white;
+}
+
+.block1 {
+    width: 530px;
+    background: #eec;
+    padding: 15px 30px;
+    #padding-right: 10px;
+    #border: solid 1px black;
+    #float: middle;
+    #vertical-align: top;
+    #align: left;
+    #margin-left: 1em;
+}
+
+.border {
+    #border: solid 1px black;
+    margin-left: -2em;
+    padding: 10px;
+    #vertical-align: middle;
+}
+.pic1 {
+    vertical-align: top;
+    position: relative; /* Относительное позиционирование */
+    top: -5px;
+    #margin-top: 15px;
+    #padding: 5px 0px;
+}
+.ol1 {
+    margin-left: -2em;
+    padding: 5px 0px;
+}
+.ol3 {
+    background: #ffe;
+    position: relative; /* Относительное позиционирование */
+    #top: 0.5em; /* Смещаем слой вверх */
+    left: -0em; /* Сдвигаем слой вправо */
+    padding: 0px 0.5em;
+}
+.row-0, .col-0 {
+    margin-left:0px !important;
+    margin-right:0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.row_url {
+    vertical-align: top;
+    position: relative; /* Относительное позиционирование */
+    top: -1em; /* Смещаем слой вверх */
+}
+.row1 {
+    vertical-align: top;
+    position: relative; /* Относительное позиционирование */
+    top: 0.5em; /* Смещаем слой вверх */
+}
+.row2 {
+    vertical-align: top;
+    #position: relative; /* Относительное позиционирование */
+    #top: 0.5em; /* Смещаем слой вверх */
+}
+input[type="-text"] {
+    border-radius: 0px;
+    padding: 4px 1em;
+    height: 2.5em;
+}
+{#vertical-align: baseline|bottom|middle|sub|super|text-bottom|text-top|top|inherit | значение | проценты}
+input[type="-submit"] {
+    vertical-align: top;
+    position: relative; /* Относительное позиционирование */
+    top: 0.2em; /* Смещаем слой вверх */
+    padding: 4px 1em;
+    height: 2.5em;
+}
+input.pay_xval {
+    width: 8em;
+}
+input.email {
+    width: 15em;
+}
+.container {
+  width: inherit;
+  max-width: 1000px;
+}
+
+#list2 { font-family: monospace; }
+#list2 ol { font-style:italic; font-size:34px; color:#ffa041; }
+#list2 ol li { margin: 0px 0 0px 70px; }
+#list2 ol li p { padding:8px; font-style:normal; font-size:16px; font-family:Arial;
+ color:#333; border-left: 2px solid #bbb; }

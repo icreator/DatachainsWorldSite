@@ -1,0 +1,70 @@
+<header id="header1">
+	<div id="navOne" class="navbar navbar-wp" role="navigation">
+        <div class="">
+            <div class="navbar-header">
+            	<button type="button" class="navbar-toggle navbar-toggle-aside-menu">
+                    <i class="fa fa-outdent icon-custom"></i>
+                </button>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+    
+            </div>
+
+            <div class="navbar-collapse collapse">
+                {{is_mobile=request.user_agent().is_mobile}}
+                {{if MENU_1:}}
+                {{=MENU(MENU_1,
+                _class='mobile-menu nav' if is_mobile else 'nav navbar-nav navbar-right',
+                mobile=is_mobile,
+                li_class='dropdown',
+                ul_class='dropdown-menu dropdown-megamenu',
+                li_first = '', li_last='',
+                active_url=URL(),
+                )}}
+                {{pass}}
+
+                <div id="logo">
+                    <h1 style="margin-bottom: 0px;margin-top: 0px;">
+                    {{=response.sublogo or ''}}
+                    </h1>
+                </div>
+            </div>
+        <div id="menu_2_line" style="background-color:{{=SKIN['bg-clr-mnu2']}};">
+            <DIV class='container collapse navbar-collapse navbar-ex2-collapse'>
+                {{=not ADMIN and MENU_2 and MENU(MENU_2, _class='nav navbar-nav navbar-nav2 navbar-right',
+                    li_class='dropdown',
+                    ul_class='dropdown-menu dropdown-megamenu',
+                    active_url = request.env.path_info) or ''}}
+            </DIV>
+        </div>
+            <!--/.nav-collapse -->
+            
+            <div class="w2p_flash alert alert-dismissable">{{=response.flash or ''}}</div>
+        </div>
+    </div>
+</header>
+
+<script>
+  function checkNavLogoVisibility() {
+    var header_logo = $('#navOne');
+      //   (header_logo.offset().top + header_logo.outerHeight() - parseInt(header_logo.css('margin-top'),10))
+    if( $('body').scrollTop() > 70 ) {
+        $('#logo').addClass('hidden');
+        $('#navOne').addClass('navbar-fixed-top');
+        $('#menu_2_line').css("background-color","");
+    } else {
+        $('#navOne').removeClass('navbar-fixed-top');
+        $('#logo').removeClass('hidden');
+        $('#menu_2_line').css("background-color","{{=SKIN['bg-clr-mnu2']}}");
+    }
+  }
+    
+$(document).ready(function() {
+  $(window).on('scroll', checkNavLogoVisibility);
+});
+
+</script>

@@ -1,0 +1,53 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="col">
+                    <h3>{{=T('Наша миссия')}}</h3>
+                    <p>
+                        {{=T('Мы делаем мир лучше')}}.
+                        
+                    </p>
+                </div>
+                <div class="col">
+                    <h3>{{=T('Контакты')}}</h3>
+                    <ul>
+                        <li>
+                            <h4>
+                            +7 916 917 2019
+                            </h4>
+                        </li>
+                        <li>
+                            <h4>
+                                adm@ipo-polza.ru
+                            </h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-9">
+            </div>
+
+        </div>
+        <div class="row">
+            <h4>
+            </h4>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-9 copyright">
+                <a href=http://ipo-polza.ru/ target="_blank">
+                    <img src={{=URL('static','images/logos/ipolza-3bit.png')}} width=120 alt="" ></a>
+                2014 © POLZA, Innovative Consumer Cooperative. <small class="addr_txt">Volgorgadskiy pr-t 26A, off.12, Moscow, 119027, Russia</small>
+                {{#=A(T('Terms of use'), _href=URL('default','tos'))}}
+                {{#=A(T('Privacy policy'), _href=URL('default','priv_policy'))}}
+            </div>
+            <div class="col-sm-3 footer-logo">
+            </div>
+        </div>
+    <BR><BR>
+    </div>
+</footer>

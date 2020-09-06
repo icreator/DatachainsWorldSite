@@ -1,0 +1,41 @@
+{{extend 'layout.html'}}
+
+<div class="container">
+    <h1>Проверить открытый (публичный, проверочный) ключ</h1>
+    <h3>Если персона подтвердила свой открытый ключ с помощью банковского платежа, указав его в назначении к платежу, то Вы сможете найти тут данные об его владельце.</h3>
+</div>
+
+
+<div style="background-color:{{=SKIN['bg-clr-mnu']}};color:{{=SKIN['clr-mnu']}}">
+    <div class="container" style="padding:10px 10%;">
+        <div class="row" style="padding-bottom:10px;">
+            <div class="col-sm-12">
+                <h3>
+                    Вставьте публичный ключ
+                </h3>
+
+                <form action="javascript: void(0);" enctype="multipart/form-data" method="post" id="inp_f">
+                    <input class="blue-c" name="acc" placeholder="Введите публичный ключ"
+                       autofocus="1" id="acc"
+                       style="color:#666; width:70%; padding:5px; margin-bottom:25px;"
+                       type="text" value="{{=acc or ''}}" />
+                {{=A(TAG.i(_class='fa fa-search', _style='width:100px;'),
+                    _id = 'go',
+                    _onclick='ajax("'+URL('pubkey', 'get')+'", ["acc"], "tag");$(".go-btn").addClass("disabled");$(this).children("i").removeClass("fa-search").addClass("fa-refresh fa-spin");',
+                    _class='btn btn-one btn-lg',
+                    )}}
+                <button class="hidden"
+                    onclick='ajax("{{=URL('pubkey', 'get')}}", ["acc"], "tag");$(".go-btn").addClass("disabled");$("#go").children("i").removeClass("fa-search").addClass("fa-refresh fa-spin");'
+                    type='submit'
+                        />
+                </form>
+            </div>
+        </div>
+        <div id="row">
+            <div class="clo-sm-12" id="tag">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
