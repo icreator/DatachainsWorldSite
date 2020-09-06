@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/.gitignore
+.idea/.name
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+datachain-site.iml
+databases/
+errors/
+sessions/
+private/appconfig.ini
+uploads/
+/databases/
