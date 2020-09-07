@@ -1,7 +1,12 @@
 # -*- coding: utf-8 -*-
 
-##### for IDE
-if False:
+if False: # for IDEA
+    from gluon import *
+    request = current.request
+    response = current.response
+    session = current.session
+    cache = current.cache
+    T = current.T
     pass
 
 
