@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
 
+##### for IDE
+if False:
+    pass
+
+
 ### session is not defibed still here
 
 ## app configuration made easy. Look inside private/appconfig.ini

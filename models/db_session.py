@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+if False:
+    pass
+
 if request.ajax:
     pass
 else:

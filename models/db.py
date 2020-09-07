@@ -9,6 +9,11 @@
 ## be redirected to HTTPS, uncomment the line below:
 # request.requires_https()
 
+##### for IDE
+if False:
+    pass
+
+
 if not request.env.web2py_runtime_gae:
     migrate = 0
     fake_migrate = myconf.take('db.fake_migrate') and True or False

@@ -1,4 +1,6 @@
 # coding: utf8
+if False:
+    pass
 
 UNIQ = True
 
