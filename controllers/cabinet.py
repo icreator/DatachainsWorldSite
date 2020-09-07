@@ -1,6 +1,19 @@
 # -*- coding: utf-8 -*-
 # try something like
 
+if False: # for IDEA
+    from gluon import *
+    from db import *
+    import auth
+    from menu import *
+    request = current.request
+    response = current.response
+    session = current.session
+    cache = current.cache
+    T = current.T
+    pass
+
+
 SUN7_ID = 18
 
 FULL_PROJECT_NAME = 'DATACHAINS.World blockchain 3.0 project'
