@@ -11,3 +11,5 @@ sessions/
 private/appconfig.ini
 uploads/
 /databases/
+/progress.log
+*.pyc
