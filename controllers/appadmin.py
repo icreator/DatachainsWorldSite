@@ -11,6 +11,16 @@ import copy
 import gluon.contenttype
 import gluon.fileutils
 
+if False:
+    from gluon import *
+    request = current.request
+    response = current.response
+    session = current.session
+    cache = current.cache
+    T = current.T
+    pass
+
+
 try:
     import pygraphviz as pgv
 except ImportError:
