@@ -1,5 +1,14 @@
 # -*- coding: utf-8 -*-
 
+if False: # for IDEA
+    from gluon import *
+    request = current.request
+    response = current.response
+    session = current.session
+    cache = current.cache
+    T = current.T
+    pass
+
 response.generic_patterns = ['*.html']
 
 session.forget()
