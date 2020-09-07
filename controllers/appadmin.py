@@ -1,5 +1,17 @@
 # -*- coding: utf-8 -*-
 
+if False: # for IDEA
+    from gluon import *
+    from db import *
+    import auth
+    from menu import *
+    request = current.request
+    response = current.response
+    session = current.session
+    cache = current.cache
+    T = current.T
+    pass
+
 # ##########################################################
 # ## make sure administrator is on localhost
 # ###########################################################
@@ -10,15 +22,6 @@ import datetime
 import copy
 import gluon.contenttype
 import gluon.fileutils
-
-if False:
-    from gluon import *
-    request = current.request
-    response = current.response
-    session = current.session
-    cache = current.cache
-    T = current.T
-    pass
 
 
 try:
